@@ -60,6 +60,7 @@ export default function App() {
           </button>
         </div>
 
+        {/* MOBILE MENU */}
         {menuOpen && (
           <div className="md:hidden px-6 pb-4 flex flex-col gap-4">
             <a href="#about">About</a>
@@ -72,6 +73,7 @@ export default function App() {
       {/* HERO */}
       <section className="min-h-screen flex items-center pt-24">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+          {/* TEXT */}
           <motion.div
             initial="hidden"
             animate="show"
@@ -90,11 +92,24 @@ export default function App() {
             </p>
 
             <div className="flex gap-4">
-              <a className="bg-blue-600 px-5 py-3 rounded-xl">View Projects</a>
-              <a className="border px-5 py-3 rounded-xl">Contact Me</a>
+              {/* FIXED BUTTONS */}
+              <a
+                href="#projects"
+                className="bg-blue-600 px-5 py-3 rounded-xl hover:scale-105 transition"
+              >
+                View Projects
+              </a>
+
+              <a
+                href="#contact"
+                className="border px-5 py-3 rounded-xl hover:scale-105 transition"
+              >
+                Contact Me
+              </a>
             </div>
           </motion.div>
 
+          {/* IMAGE */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -104,6 +119,7 @@ export default function App() {
             <img
               src="/john.jpeg"
               className="w-72 h-72 md:w-96 md:h-96 rounded-full object-cover border-4 border-blue-500"
+              alt="John"
             />
           </motion.div>
         </div>
