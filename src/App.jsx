@@ -218,25 +218,28 @@ export default function App() {
             <FiMail /> johnadelm23@gmail.com
           </p>
 
-          {/* GITHUB FIXED */}
-          <a
-            href="https://github.com/johnadelm23-beep"
-            target="_blank"
-            rel="noopener noreferrer"
+          {/* FIXED GITHUB */}
+          <button
+            onClick={() =>
+              window.open("https://github.com/johnadelm23-beep", "_blank")
+            }
             className="flex items-center gap-2 hover:text-blue-500 transition"
           >
             <FiGithub /> GitHub
-          </a>
+          </button>
 
-          {/* LINKEDIN FIXED */}
-          <a
-            href="https://www.linkedin.com/in/john-adel-498910328"
-            target="_blank"
-            rel="noopener noreferrer"
+          {/* FIXED LINKEDIN */}
+          <button
+            onClick={() =>
+              window.open(
+                "https://www.linkedin.com/in/john-adel-498910328",
+                "_blank",
+              )
+            }
             className="flex items-center gap-2 hover:text-blue-500 transition"
           >
             <FiLinkedin /> LinkedIn
-          </a>
+          </button>
         </div>
       </motion.section>
     </div>
