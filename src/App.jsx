@@ -170,13 +170,14 @@ export default function App() {
         <div className="grid md:grid-cols-2 gap-6">
           {[
             {
-              title: "Bookia",
-              description:
-                "E-commerce app to display books online and add to cart built with API and backend integration",
-
               title: "AI Chat App",
               description:
                 "An AI-powered chat application built with Flutter and Firebase. Features real-time messaging, AI responses, authentication, and modern UI design.",
+            },
+            {
+              title: "Bookia",
+              description:
+                "E-commerce app to display books online and add to cart built with API and backend integration",
             },
             {
               title: "Courses Platform",
