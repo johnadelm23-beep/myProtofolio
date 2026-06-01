@@ -11,6 +11,7 @@ import {
   FiMail,
   FiDownload,
 } from "react-icons/fi";
+import { title } from "framer-motion/client";
 
 export default function App() {
   const [dark, setDark] = useState(true);
@@ -52,6 +53,11 @@ export default function App() {
       description:
         "Productivity application with task organization, deadlines, reminders, and local storage persistence.",
       tech: "Flutter • Hive",
+    },
+    {
+      title: "Exam App (Egtma3na)",
+      description:
+        "platform exam 2 options admin and user, admin can add exams and create beauty posts to users,the exams anti cheating and auto correction ",
     },
   ];
 
@@ -191,7 +197,7 @@ export default function App() {
       <section className="max-w-6xl mx-auto px-6 py-10">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {[
-            { number: "5+", label: "Projects" },
+            { number: "6+", label: "Projects" },
             { number: "2+", label: "Years Learning" },
             { number: "10+", label: "Technologies" },
             { number: "100%", label: "Passion" },
