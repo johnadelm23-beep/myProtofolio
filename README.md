@@ -1,20 +1,113 @@
-<<<<<<< HEAD
-# React + Vite
+# John Adel Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive personal portfolio website built with React, Vite, Tailwind CSS, and Framer Motion to showcase my skills, projects, and experience as a Flutter Developer and Computer Science student.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Add your deployed website link here:
 
-## React Compiler
+```text
+https://your-portfolio-link.com
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## About
 
-## Expanding the ESLint configuration
+This portfolio highlights my background, technical skills, and software development projects. It serves as a central place to showcase my work, experience, and professional profile.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# myProtofolio
->>>>>>> fdcebc1d8baafca7cb74a0dd442aefb477e16a67
+## Features
+
+* Responsive design for desktop, tablet, and mobile devices
+* Dark and light mode support
+* Smooth animations using Framer Motion
+* Modern and professional UI
+* Projects showcase section
+* Skills section
+* Contact information and social links
+* Downloadable CV
+
+## Technologies Used
+
+### Frontend
+
+* React.js
+* Vite
+* Tailwind CSS
+* Framer Motion
+* React Icons
+
+### Development Tools
+
+* Git
+* GitHub
+* VS Code
+
+## Projects Included
+
+### AI Chat Assistant
+
+AI-powered mobile application built with Flutter and Firebase featuring authentication, real-time communication, and intelligent conversational responses.
+
+### Bookia E-Commerce
+
+E-commerce application with product browsing, cart management, and API integration.
+
+### Programming Learning Platform
+
+Educational platform integrating programming tutorials, YouTube content, quizzes, and AI-powered learning assistance.
+
+### Inventory Management System
+
+System for tracking products, stock levels, and inventory operations with Firebase integration.
+
+### Task Management App
+
+Productivity application for organizing tasks, deadlines, and daily activities.
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/johnadelm23-beep/myPortfolio.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd myPortfolio
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+## Contact
+
+**John Adel**
+
+* Phone: +20 122 680 6622
+* Email: [johnadelm23@gmail.com](mailto:johnadelm23@gmail.com)
+* GitHub: https://github.com/johnadelm23-beep
+* LinkedIn: https://www.linkedin.com/in/john-adel-498910328
+
+## License
+
+This project is open source and available under the MIT License.
+
+---
+
+Developed by John Adel
