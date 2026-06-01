@@ -27,7 +27,7 @@ export default function App() {
   };
 
   return (
-    <div className={`${theme} transition duration-300`}>
+    <div className={`${theme} transition duration-300 font-sans`}>
       {/* NAVBAR */}
       <nav className="fixed top-0 w-full backdrop-blur-lg border-b z-50">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
@@ -60,7 +60,6 @@ export default function App() {
           </button>
         </div>
 
-        {/* MOBILE MENU */}
         {menuOpen && (
           <div className="md:hidden px-6 pb-4 flex flex-col gap-4">
             <a href="#about">About</a>
@@ -73,7 +72,6 @@ export default function App() {
       {/* HERO */}
       <section className="min-h-screen flex items-center pt-24">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
-          {/* TEXT */}
           <motion.div
             initial="hidden"
             animate="show"
@@ -100,7 +98,7 @@ export default function App() {
               </a>
 
               <a
-                href="#contact Me"
+                href="#contact"
                 className="border px-5 py-3 rounded-xl hover:scale-105 transition"
               >
                 Contact Me
@@ -108,7 +106,6 @@ export default function App() {
             </div>
           </motion.div>
 
-          {/* IMAGE */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -125,21 +122,14 @@ export default function App() {
       </section>
 
       {/* ABOUT */}
-      <motion.section
-        id="about"
-        className="max-w-5xl mx-auto px-6 py-20"
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6 }}
-      >
+      <section id="about" className="max-w-5xl mx-auto px-6 py-20">
         <h2 className="text-3xl font-bold mb-6">About Me</h2>
         <p className="text-gray-400 leading-7">
           Computer Science & AI student at Benha University. Passionate about
           building production-level Flutter apps, AI systems, and clean scalable
           architectures.
         </p>
-      </motion.section>
+      </section>
 
       {/* SKILLS */}
       <section className="max-w-5xl mx-auto px-6 py-20">
@@ -154,8 +144,7 @@ export default function App() {
             "Git",
             "Postman",
             "C++",
-            "Data Structure",
-            "Algorithms",
+            "DSA",
           ].map((skill, i) => (
             <motion.div
               key={skill}
@@ -178,22 +167,21 @@ export default function App() {
         <div className="grid md:grid-cols-2 gap-6">
           {[
             "AI Chat App",
-            "Programming Courses Platform",
-            "Inventory Management System",
-            "Task Management App",
-          ].map((project, i) => (
+            "Courses Platform",
+            "Inventory System",
+            "Task App",
+          ].map((p, i) => (
             <motion.div
-              key={project}
+              key={p}
               className={`${card} border p-6 rounded-2xl hover:scale-105 transition`}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.1 }}
               viewport={{ once: true }}
             >
-              <h3 className="text-xl font-bold mb-2">{project}</h3>
+              <h3 className="text-xl font-bold mb-2">{p}</h3>
               <p className="text-gray-400 text-sm">
-                Built using Flutter, Firebase, Clean Architecture, and scalable
-                state management.
+                Built using Flutter, Firebase, Clean Architecture.
               </p>
             </motion.div>
           ))}
@@ -201,48 +189,34 @@ export default function App() {
       </section>
 
       {/* CONTACT */}
-      <motion.section
-        id="contact"
-        className="max-w-5xl mx-auto px-6 py-20"
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-      >
+      <section id="contact" className="max-w-5xl mx-auto px-6 py-20">
         <h2 className="text-3xl font-bold mb-8">Contact</h2>
 
         <div className="space-y-4">
           <p className="flex items-center gap-2">
             <FiPhone /> 01226806622
           </p>
-
           <p className="flex items-center gap-2">
             <FiMail /> johnadelm23@gmail.com
           </p>
 
-          {/* FIXED GITHUB */}
           <button
-            onClick={() =>
-              window.open("https://github.com/johnadelm23-beep", "_blank")
-            }
-            className="flex items-center gap-2 hover:text-blue-500 transition"
+            onClick={() => window.open("https://github.com/johnadelm23-beep")}
+            className="flex items-center gap-2 hover:text-blue-500"
           >
             <FiGithub /> GitHub
           </button>
 
-          {/* FIXED LINKEDIN */}
           <button
             onClick={() =>
-              window.open(
-                "https://www.linkedin.com/in/john-adel-498910328",
-                "_blank",
-              )
+              window.open("https://www.linkedin.com/in/john-adel-498910328")
             }
-            className="flex items-center gap-2 hover:text-blue-500 transition"
+            className="flex items-center gap-2 hover:text-blue-500"
           >
             <FiLinkedin /> LinkedIn
           </button>
         </div>
-      </motion.section>
+      </section>
     </div>
   );
 }
