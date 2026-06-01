@@ -92,7 +92,6 @@ export default function App() {
             </p>
 
             <div className="flex gap-4">
-              {/* FIXED BUTTONS */}
               <a
                 href="#projects"
                 className="bg-blue-600 px-5 py-3 rounded-xl hover:scale-105 transition"
@@ -219,11 +218,23 @@ export default function App() {
             <FiMail /> johnadelm23@gmail.com
           </p>
 
-          <a className="flex items-center gap-2" href="#">
+          {/* GITHUB FIXED */}
+          <a
+            href="https://github.com/johnadelm23-beep"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 hover:text-blue-500 transition"
+          >
             <FiGithub /> GitHub
           </a>
 
-          <a className="flex items-center gap-2" href="#">
+          {/* LINKEDIN FIXED */}
+          <a
+            href="https://www.linkedin.com/in/john-adel-498910328"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 hover:text-blue-500 transition"
+          >
             <FiLinkedin /> LinkedIn
           </a>
         </div>
