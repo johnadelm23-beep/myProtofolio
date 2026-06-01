@@ -10,6 +10,7 @@ import {
   FiPhone,
   FiMail,
 } from "react-icons/fi";
+import { title } from "framer-motion/client";
 
 export default function App() {
   const [dark, setDark] = useState(true);
@@ -143,6 +144,7 @@ export default function App() {
             "Firebase",
             "REST API",
             "Git",
+            "GitHub",
             "Postman",
             "C++",
             "DSA",
@@ -167,23 +169,41 @@ export default function App() {
 
         <div className="grid md:grid-cols-2 gap-6">
           {[
-            "AI Chat App",
-            "Courses Platform",
-            "Inventory System",
-            "Task App",
-          ].map((p, i) => (
+            {
+              title: "Bookia",
+              description:
+                "E-commerce app to display books online and add to cart built with API and backend integration",
+
+              title: "AI Chat App",
+              description:
+                "An AI-powered chat application built with Flutter and Firebase. Features real-time messaging, AI responses, authentication, and modern UI design.",
+            },
+            {
+              title: "Courses Platform",
+              description:
+                "A programming learning platform that provides tutorials, YouTube video integration, quizzes, and progress tracking using Flutter and Firebase.",
+            },
+            {
+              title: "Inventory System",
+              description:
+                "A complete inventory management system for tracking products, stock levels, sales, and reports with Firebase backend integration.",
+            },
+            {
+              title: "Task App",
+              description:
+                "A productivity application that helps users manage tasks, set deadlines, organize projects, and track daily progress efficiently With Local storage.",
+            },
+          ].map((project, i) => (
             <motion.div
-              key={p}
+              key={project.title}
               className={`${card} border p-6 rounded-2xl hover:scale-105 transition`}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.1 }}
               viewport={{ once: true }}
             >
-              <h3 className="text-xl font-bold mb-2">{p}</h3>
-              <p className="text-gray-400 text-sm">
-                Built using Flutter, Firebase, Clean Architecture.
-              </p>
+              <h3 className="text-xl font-bold mb-2">{project.title}</h3>
+              <p className="text-gray-400 text-sm">{project.description}</p>
             </motion.div>
           ))}
         </div>
