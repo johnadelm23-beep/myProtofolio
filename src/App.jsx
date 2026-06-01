@@ -29,6 +29,7 @@ export default function App() {
   return (
     <div className={`${theme} transition duration-300 font-sans`}>
       {/* NAVBAR */}
+      <div style={{ fontFamily: "Inter, sans-serif" }}></div>
       <nav className="fixed top-0 w-full backdrop-blur-lg border-b z-50">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
           <h1 className="font-bold text-xl">John Adel</h1>
@@ -187,7 +188,6 @@ export default function App() {
           ))}
         </div>
       </section>
-
       {/* CONTACT */}
       <section id="contact" className="max-w-5xl mx-auto px-6 py-20">
         <h2 className="text-3xl font-bold mb-8">Contact</h2>
