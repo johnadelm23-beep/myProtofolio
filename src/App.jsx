@@ -100,7 +100,7 @@ export default function App() {
               </a>
 
               <a
-                href="#contact"
+                href="#contact Me"
                 className="border px-5 py-3 rounded-xl hover:scale-105 transition"
               >
                 Contact Me
@@ -152,9 +152,10 @@ export default function App() {
             "Firebase",
             "REST API",
             "Git",
-            "Python",
+            "Postman",
             "C++",
-            "AI",
+            "Data Structure",
+            "Algorithms",
           ].map((skill, i) => (
             <motion.div
               key={skill}
