@@ -109,5 +109,7 @@ npm run build
 This project is open source and available under the MIT License.
 
 ---
+<img width="1883" height="765" alt="Screenshot 2026-06-01 172100" src="https://github.com/user-attachments/assets/cea7bd51-cee5-4e9c-a605-037fc3743cdb" />
+
 
 Developed by John Adel
